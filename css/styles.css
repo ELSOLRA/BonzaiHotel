@@ -25,7 +25,7 @@ body {
     height: 100vh;
     margin: 0 auto;
     grid-template-columns: repeat(3,1fr);
-    grid-auto-rows: 5vh 88vh 10vh 10vh 40vh 50vh;
+    grid-auto-rows: 5vh 88vh 10vh 10vh 40vh 10vh 50vh;
     row-gap: 0%;
 }
 /*----------------------Header----------------------*/
@@ -202,6 +202,42 @@ body {
     font-weight: 600;
     background-color: beige;
 }
+/*-----------------------------------Row between-----------------*/
+.row {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccd3a6;
+}
+.row--services-mode {
+    grid-column: span 3;
+    grid-row: 4;
+}
+.row--rooms-mode {
+    grid-column: span 3;
+    min-width: fit-content;
+
+}
+.row-title {
+    width: 25vw;
+    min-width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row-title--mode {
+    color: white;
+    border-bottom: 0.2rem solid #507ceb;
+    text-shadow: -0.1rem 0.1rem rgba(0, 0, 0, 0.705);
+    font-size: 4vh;
+    padding: 1vh 0;
+    
+    /*visibility: visible;
+    /*animation: fadein 1s ease-in 20ms 1 alternate both;*/
+}
+
+/*-------------------------------------Our services------------------------*/
 .services {
 
     grid-column: span 3;
@@ -209,22 +245,8 @@ body {
     background-color: #ccd3a6;
     display: flex;
 }
-.title-services {
-    grid-column: span 3;
-    grid-row: 4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ccd3a6;
-}
-.title-services--mode {
-    color: white;
-    text-shadow: -0.1rem 0.1rem rgba(0, 0, 0, 0.705);
-    font-size: 4vh;
-    /*visibility: visible;
-    /*animation: fadein 1s ease-in 20ms 1 alternate both;*/
 
-}
+
 .services section {
 
     display: flex;
@@ -236,9 +258,10 @@ body {
     
 }
 .services__logo-link {
-    width: 6vw;
+    width: 7vw;
     height: 7vh;
     outline: 1vh solid #0044cd14;
+    border-radius: 1%;
     background: #507ceba6;
     box-shadow: 0px 2px 8px 3px rgba(50,56,89,0.61);
     transition: 0.5s;
@@ -263,6 +286,7 @@ body {
     font-weight: 600;
 }
 
+/*-------------------------------------Rooms cards------------------------------*/
 /*@keyframes fadein {
     0% {
         opacity: 0;
@@ -300,6 +324,9 @@ body {
         width: fit-content;
         height: fit-content;
     }
+    .row-title {
+        min-width: fit-content;
+    }
     .services {
         flex-direction: column;
         padding: 2vh 0;
@@ -317,6 +344,10 @@ body {
     }
     .services__logo-link:hover {
         transform: scale(1.1);
+    }
+    .services__description {
+        padding: 2vh 0;
+        text-align: left;
     }
 }
 
