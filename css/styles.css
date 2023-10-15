@@ -60,7 +60,7 @@ body {
     min-width: 15%;
     margin: 1% 0 1%;
     /*aspect-ratio: 10/2;*/
-    background-color: #507ceb;
+    background-color: var(--elements-blue-color);
     border-radius: 5% / 10%;
     box-shadow: -2px 3px 5px 0px rgba(50,56,89,0.61);
     
@@ -105,39 +105,39 @@ body {
 }
 
 .hero-image--page1 {
-    background-image:url(/bonzai-assets/assets/photos/09-day.jpg);
+    background-image:url("../bonzai-assets/assets/photos/09-day.jpg");
 }
 
 .hero-image--page2 {
-    background-image:url(/bonzai-assets/assets/photos/09-night.jpg);
+    background-image:url("../bonzai-assets/assets/photos/09-night.jpg");
 }
 
 .hero-image--page3 {
-    background-image: url(/bonzai-assets/assets/photos/inside\ bar\ .jpg);
+    background-image: url("../bonzai-assets/assets/photos/inside\ bar\ .jpg");
 }
 
 .hero-image--page4 {
-    background-image: url(/bonzai-assets/assets/photos/03-day.jpg)
+    background-image: url("../bonzai-assets/assets/photos/03-day.jpg")
 }
 
 .hero-image--page5 {
-    background-image: url(/bonzai-assets/assets/photos/06-night.jpg);
+    background-image: url("../bonzai-assets/assets/photos/06-night.jpg");
 }
 
 .hero-image--page6 {
-    background-image: url(/bonzai-assets/assets/photos/Suit\ room.jpg);
+    background-image: url("../bonzai-assets/assets/photos/Suit\ room.jpg");
 }
 
 .hero-image--page7 {
-    background-image: url(/bonzai-assets/assets/photos/07-day.jpg);
+    background-image: url("../bonzai-assets/assets/photos/07-day.jpg");
 }
 
 .hero-image--page8 {
-    background-image: url(/bonzai-assets/assets/photos/Luxury\ room.jpg);
+    background-image: url("../bonzai-assets/assets/photos/Luxury\ room.jpg");
 }
 
 .hero-image--page9 {
-    background-image: url(/bonzai-assets/assets/photos/presidential\ room\ .jpg);
+    background-image: url("../bonzai-assets/assets/photos/presidential\ room\ .jpg");
 }
 
 .content
