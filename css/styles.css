@@ -8,6 +8,10 @@
     --bg--color: #ccd3a6;
     --elements-blue-color: #507ceb;
     --text-brown-color: #b96800;
+    --cards-title-font-size: 3.5vh;
+    --cards-description-font-size: 2.5vh;
+    --cards-description-font-weight: 600;
+
 }
 * {
     font-family: 'Epilogue';
@@ -112,6 +116,10 @@ body {
 
 .hero-image--page3 {
     background-image: url(/bonzai-assets/assets/photos/inside\ bar\ .jpg);
+}
+
+.hero-image--page4 {
+    background-image: url(/bonzai-assets/assets/photos/03-day.jpg)
 }
 
 .content
@@ -383,6 +391,9 @@ body {
 .row--contacts-mode {
 background:linear-gradient(#ccd3a6,#ffffff);
 }
+.row--contacts-mode--additional-padding {
+    padding: 20% 0 4%;
+}
 
 .row--facilities-mode {
     grid-column: span 3;
@@ -503,6 +514,7 @@ background:linear-gradient(#ccd3a6,#ffffff);
 }
 
 /*--------------------------Room Card---------------------------*/
+
 .room-cards-container {
     grid-column: span 3;
     display: flex;
@@ -578,6 +590,77 @@ background:linear-gradient(#ccd3a6,#ffffff);
     color: var(--text-brown-color);
   }
 
+/*----------------  Room page with descriptions-------------------*/ 
+
+.room-description {
+    padding: 5% 5%;
+    grid-column: span 3;
+    display: flex;
+    gap: 20%;
+    background-color: var(--bg--color);
+}
+
+.room-description__details,
+.room-description__info {
+    flex: 1;
+    width: 50%;
+    padding: 3%;
+    border-radius: 2% / 3%;
+    background-color: white;
+}
+.room-description__title {
+    margin: 0 0 3%;
+    font-size: var(--cards-title-font-size);
+    color: var(--text-brown-color);
+}
+
+.room-description__text,
+.room-description__info-item {
+    font-size: var(--cards-description-font-size);
+    font-weight: var(--cards-description-font-weight);
+    line-height: 3vh;
+    text-align: left;
+}
+
+.room-description__info-item {
+    padding: 0 0 5%;
+}
+
+.extra-info1,
+.extra-info2,
+.extra-info3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2% 1%;
+
+}
+
+.extra-info__list {
+    list-style: none;
+    width: 100%;
+    height: auto;
+    padding: 0 8% 0;
+    font-size: var(--cards-description-font-size);
+    font-weight: var(--cards-description-font-weight);
+}
+
+.extra-info__item {
+    display: flex;
+    align-items: center;
+    padding: 2% 1% 2%;
+    color: var(--elements-blue-color)
+    
+}
+
+.extra-info__item::before {
+    content: '-';
+    width: 1vw; 
+    display: inline-block;
+    text-align: right; 
+    margin-right: 0.8vw; 
+}
+
 /*--------------------------About us-----------------------------*/
 
 .about-us-content {
@@ -612,9 +695,13 @@ background:linear-gradient(#ccd3a6,#ffffff);
 
 .about-us-content__title
 {
+    text-align: center;
     font-size: 3.5vh;
     color: var(--text-brown-color);
     padding: 2% 1% 1%;
+}
+.about-us-content__title--to-left-side {
+    text-align: left;
 }
 
 .about-us-content__description {
@@ -626,7 +713,8 @@ background:linear-gradient(#ccd3a6,#ffffff);
 
 
 .entrance-image,.bar-image,.restaurant1-image,.restaurant2-image,
-.coffee-room-image,.meeting-room-image,.sauna-image,.gym-image,.pool-image  {
+.coffee-room-image,.meeting-room-image,.sauna-image,.gym-image,.pool-image,
+.room-image  {
     grid-column: span 1;
     padding: 1% 2% 1%;
     background-color: var(--bg--color);
@@ -680,7 +768,7 @@ background:linear-gradient(#ccd3a6,#ffffff);
 }
 
 .facilities__item:hover .facilities__details {
-    opacity: 1; /* Only changing opacity on hover */
+    opacity: 1; 
 }
 
 
