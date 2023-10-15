@@ -122,6 +122,26 @@ body {
     background-image: url(/bonzai-assets/assets/photos/03-day.jpg)
 }
 
+.hero-image--page5 {
+    background-image: url(/bonzai-assets/assets/photos/06-night.jpg);
+}
+
+.hero-image--page6 {
+    background-image: url(/bonzai-assets/assets/photos/Suit\ room.jpg);
+}
+
+.hero-image--page7 {
+    background-image: url(/bonzai-assets/assets/photos/07-day.jpg);
+}
+
+.hero-image--page8 {
+    background-image: url(/bonzai-assets/assets/photos/Luxury\ room.jpg);
+}
+
+.hero-image--page9 {
+    background-image: url(/bonzai-assets/assets/photos/presidential\ room\ .jpg);
+}
+
 .content
 {
     width:40%;
@@ -605,7 +625,7 @@ background:linear-gradient(#ccd3a6,#ffffff);
     color: var(--text-brown-color);
   }
 
-/*----------------  Room page with descriptions-------------------*/ 
+/*----------------Room page with descriptions-------------------*/ 
 
 .room-description {
     padding: 5% 5%;
@@ -780,6 +800,11 @@ background:linear-gradient(#ccd3a6,#ffffff);
     font-weight: 600;
     opacity: 0;
     transition: opacity 1s;
+}
+
+.facilities__link {
+    text-decoration: none;
+    color: white;
 }
 
 .facilities__item:hover .facilities__details {
